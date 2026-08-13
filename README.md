@@ -14,6 +14,7 @@ honest-reporting rules.
 |---|---|
 | `cloud-browser-skill.zip` | Drive the workspace's **cloud browser**: browse and read sites, click/fill/submit with the built-in approval gate, work the user's logged-in sites (they log in by hand — you never touch credentials), tabs and page-waits, **download files (even behind logins) into the workspace**, process them in the code sandbox, and open the result in the right app. |
 | `porkbun-skill.zip` | Work a **Porkbun** account through the logged-in cloud browser: list domains + expiry dates, and add/change DNS records (TXT/site-verification/A/CNAME/MX) — knows Porkbun's staged Add-Record → Submit-Records flow, its 2FA step-up walls, the TXT-textarea trap, and verifies records from a live DNS resolver. |
+| `openai-invoices-skill.zip` | Pull **OpenAI invoices** (platform.openai.com) into the workspace through the logged-in cloud browser — all, a time window, or only the ones the user doesn't already have: dedups by invoice NUMBER against their PDFs/spreadsheet/notes, knows the Stripe invoicedata resolution (paced — it rate-limits), the 600s signed-URL expiry, and batch download; generalizes to any invoice.stripe.com-hosted vendor billing. |
 | `math-explainer-video-skill.zip` | Make a narrated, manim-animated maths explainer video end-to-end in the workspace (sandbox render → video editor assembly → one mp4 delivered). |
 
 ## Install
